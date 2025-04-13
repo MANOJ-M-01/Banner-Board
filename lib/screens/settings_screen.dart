@@ -20,7 +20,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Color textColor = Colors.yellow;
   Color backgroundColor = Colors.black;
 
-  bool fullscreen = false;
+  bool fullscreen = true;
   bool alwaysOn = true;
   int sleepAfter = 0;
 
