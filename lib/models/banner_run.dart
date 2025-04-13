@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class BannerRun {
   String text;
   String fontFamily;
+  TextAlign align;
   double fontSize;
   Color textColor;
   Color backgroundColor;
@@ -17,6 +18,7 @@ class BannerRun {
   BannerRun({
     required this.text,
     required this.fontFamily,
+    required this.align,
     required this.fontSize,
     required this.textColor,
     required this.backgroundColor,

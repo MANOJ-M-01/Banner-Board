@@ -5,6 +5,7 @@ import 'package:banner_board/widgets/font_controls.dart';
 import 'package:banner_board/widgets/animation_controls.dart';
 import 'package:banner_board/widgets/preview_controls.dart';
 import 'package:banner_board/models/banner_run.dart';
+import 'package:banner_board/utils/type_cast.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -26,7 +27,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   String direction = 'left';
   String animationType = 'marquee';
-  double speed = 0.3;
+  double speed = 0.5;
 
   String screenOrientation = 'landscape';
   String selectedFont = 'Tarragon';
@@ -48,6 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               bannerRun: BannerRun(
                 text: textController.text,
                 fontFamily: selectedFont,
+                align: textAlignFromString(fontAlign),
                 fontSize: fontSize,
                 textColor: textColor,
                 backgroundColor: backgroundColor,
@@ -80,6 +82,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             const SizedBox(height: 5),
             TextField(
               controller: textController,
+              maxLength: 100,
               style: const TextStyle(color: Colors.white),
               decoration: const InputDecoration(
                 filled: true,

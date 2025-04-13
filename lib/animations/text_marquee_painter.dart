@@ -7,6 +7,7 @@ class TextMarqueePainter extends CustomPainter {
   final double fontSize;
   final Color color;
   final String direction;
+  final TextAlign align;
 
   TextMarqueePainter({
     required this.progress,
@@ -15,38 +16,48 @@ class TextMarqueePainter extends CustomPainter {
     required this.fontSize,
     required this.color,
     required this.direction,
+    this.align = TextAlign.left,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
-    final textPainter = TextPainter(
-      text: TextSpan(
-        text: text,
-        style: TextStyle(
-          fontFamily: fontFamily,
-          fontSize: fontSize,
-          color: color,
-        ),
-      ),
-      textDirection: TextDirection.ltr,
+    final textStyle = TextStyle(
+      fontFamily: fontFamily,
+      fontSize: fontSize,
+      color: color,
     );
-    textPainter.layout();
 
-    double dx = 0, dy = 0;
+    final textSpan = TextSpan(text: text, style: textStyle);
+    final textPainter = TextPainter(
+      text: textSpan,
+      textDirection: TextDirection.ltr,
+      textAlign: align,
+      maxLines: null,
+    );
+
+    // Layout text with constrained width (wrap lines)r
+    if (direction == "top" || direction == "bottom") {
+      textPainter.layout(maxWidth: size.width);
+    } else {
+      textPainter.layout();
+    }
+
+    // Calculate offset
     final textWidth = textPainter.width;
     final textHeight = textPainter.height;
+    double dx = 0, dy = 0;
 
     switch (direction) {
       case 'left':
         dx = size.width - (size.width + textWidth) * progress;
-        dy = (size.height - textHeight) / 2;
+        dy = (size.height - textHeight) / 2; // Vertically center
         break;
       case 'right':
         dx = -textWidth + (size.width + textWidth) * progress;
         dy = (size.height - textHeight) / 2;
         break;
       case 'top':
-        dx = (size.width - textWidth) / 2;
+        dx = (size.width - textWidth) / 2; // Horizontally center
         dy = size.height - (size.height + textHeight) * progress;
         break;
       case 'bottom':
@@ -55,7 +66,11 @@ class TextMarqueePainter extends CustomPainter {
         break;
     }
 
+    // Clip the canvas to size's bounds (width + height)
+    canvas.save();
+    canvas.clipRect(Rect.fromLTWH(0, 0, size.width, size.height));
     textPainter.paint(canvas, Offset(dx, dy));
+    canvas.restore();
   }
 
   @override
