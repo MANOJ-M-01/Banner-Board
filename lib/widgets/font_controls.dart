@@ -10,7 +10,8 @@ class FontControls extends StatelessWidget {
   final Function(String) onFontWeightChanged;
   final Function(double) onFontSizeChanged;
   final Function(String) onFontAlignChanged;
-
+  final Function(double) onTextShadowSizeChanged;
+  final double textShadowSize;
   const FontControls({
     super.key,
     required this.selectedFont,
@@ -21,6 +22,8 @@ class FontControls extends StatelessWidget {
     required this.onFontWeightChanged,
     required this.onFontSizeChanged,
     required this.onFontAlignChanged,
+    required this.onTextShadowSizeChanged,
+    required this.textShadowSize,
   });
 
   @override
@@ -75,6 +78,7 @@ class FontControls extends StatelessWidget {
                   )
                   .toList(),
         ),
+
         const SizedBox(height: 12),
 
         const Text(
@@ -125,6 +129,22 @@ class FontControls extends StatelessWidget {
             DropdownMenuItem(value: 'justify', child: Text('justify')),
           ],
         ),
+
+        const SizedBox(height: 12),
+
+        const Text(
+          'Shadow Size',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        Slider(
+          value: textShadowSize,
+          min: 0.0,
+          max: 50.0,
+          divisions: 10,
+          label: fontSize.round().toString(),
+          onChanged: onTextShadowSizeChanged,
+        ),
+        Text('Selected Size: ${fontSize.toStringAsFixed(0)}'),
       ],
     );
   }

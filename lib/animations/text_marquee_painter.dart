@@ -6,6 +6,7 @@ class TextMarqueePainter extends CustomPainter {
   final String fontFamily;
   final double fontSize;
   final Color color;
+  final double textShadowSize;
   final String direction;
   final TextAlign align;
 
@@ -15,6 +16,7 @@ class TextMarqueePainter extends CustomPainter {
     required this.fontFamily,
     required this.fontSize,
     required this.color,
+    required this.textShadowSize,
     required this.direction,
     this.align = TextAlign.left,
   });
@@ -25,6 +27,16 @@ class TextMarqueePainter extends CustomPainter {
       fontFamily: fontFamily,
       fontSize: fontSize,
       color: color,
+      shadows:
+          textShadowSize > 0.0
+              ? [
+                Shadow(
+                  blurRadius: textShadowSize,
+                  color: color.withAlpha((0.5 * 255).toInt()),
+                  offset: const Offset(5.0, 5.0),
+                ),
+              ]
+              : [],
     );
 
     final textSpan = TextSpan(text: text, style: textStyle);

@@ -18,6 +18,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   String inputText = 'Welcome to Banner Board!';
   double fontSize = 200;
   String fontAlign = "center";
+  double textShadowSize = 0;
   Color textColor = Colors.yellow;
   Color backgroundColor = Colors.black;
 
@@ -52,6 +53,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 align: textAlignFromString(fontAlign),
                 fontSize: fontSize,
                 textColor: textColor,
+                textShadowSize: textShadowSize,
                 backgroundColor: backgroundColor,
                 fullscreen: fullscreen,
                 alwaysOn: alwaysOn,
@@ -95,12 +97,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
               fontSize: fontSize,
               selectedFont: selectedFont,
               selectedFontWeight: selectedFontWeight,
+              textShadowSize: textShadowSize,
               fontAlign: fontAlign,
               onFontChanged: (value) => setState(() => selectedFont = value),
               onFontSizeChanged: (value) => setState(() => fontSize = value),
               onFontWeightChanged:
                   (value) => setState(() => selectedFontWeight = value),
               onFontAlignChanged: (val) => setState(() => fontAlign = val),
+              onTextShadowSizeChanged:
+                  (val) => setState(() => textShadowSize = val),
             ),
             const SizedBox(height: 20),
             ColorPicker(

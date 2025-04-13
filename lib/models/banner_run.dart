@@ -4,6 +4,7 @@ class BannerRun {
   String text;
   String fontFamily;
   TextAlign align;
+  double textShadowSize;
   double fontSize;
   Color textColor;
   Color backgroundColor;
@@ -19,6 +20,7 @@ class BannerRun {
     required this.text,
     required this.fontFamily,
     required this.align,
+    required this.textShadowSize,
     required this.fontSize,
     required this.textColor,
     required this.backgroundColor,

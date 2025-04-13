@@ -108,6 +108,7 @@ class _DisplayScreenState extends State<DisplayScreen>
                 text: widget.bannerRun.text,
                 fontFamily: widget.bannerRun.fontFamily,
                 fontSize: widget.bannerRun.fontSize,
+                textShadowSize: widget.bannerRun.textShadowSize,
                 color: widget.bannerRun.textColor,
                 direction: widget.bannerRun.direction,
                 align: widget.bannerRun.align,

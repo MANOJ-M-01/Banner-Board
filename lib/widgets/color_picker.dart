@@ -15,6 +15,7 @@ class ColorPicker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Color> colors = [
+      // Basic Colors
       Colors.black,
       Colors.white,
       Colors.red,
@@ -25,6 +26,18 @@ class ColorPicker extends StatelessWidget {
       Colors.teal,
       Colors.yellow,
       Colors.grey,
+
+      // Neon & Vibrant Banner Colors
+      const Color(0xFFFF00FF), // Neon Pink
+      const Color(0xFF39FF14), // Neon Green
+      const Color(0xFF00FFFF), // Neon Cyan
+      const Color(0xFFFFA500), // Bright Orange
+      const Color(0xFF00BFFF), // Deep Sky Blue
+      const Color(0xFFFFFF00), // Bright Yellow
+      const Color(0xFFFF1493), // Deep Pink
+      const Color(0xFF7CFC00), // Lawn Green
+      const Color(0xFFDA70D6), // Orchid
+      const Color(0xFF40E0D0), // Turquoise
     ];
 
     return Column(
