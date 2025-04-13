@@ -84,6 +84,8 @@ class _DisplayScreenState extends State<DisplayScreen>
           text: widget.bannerRun.text,
           fontSize: widget.bannerRun.fontSize,
           color: widget.bannerRun.textColor,
+          fontFamily: widget.bannerRun.fontFamily,
+          textShadowSize: widget.bannerRun.textShadowSize,
         );
         break;
       case 'pulse':
@@ -91,6 +93,8 @@ class _DisplayScreenState extends State<DisplayScreen>
           text: widget.bannerRun.text,
           fontSize: widget.bannerRun.fontSize,
           color: widget.bannerRun.textColor,
+          fontFamily: widget.bannerRun.fontFamily,
+          textShadowSize: widget.bannerRun.textShadowSize,
         );
         break;
       case 'wave':
@@ -98,6 +102,8 @@ class _DisplayScreenState extends State<DisplayScreen>
           text: widget.bannerRun.text,
           fontSize: widget.bannerRun.fontSize,
           color: widget.bannerRun.textColor,
+          fontFamily: widget.bannerRun.fontFamily,
+          textShadowSize: widget.bannerRun.textShadowSize,
         );
         break;
       default:

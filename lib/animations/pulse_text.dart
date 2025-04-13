@@ -4,12 +4,16 @@ class PulseText extends StatefulWidget {
   final String text;
   final double fontSize;
   final Color color;
+  final String fontFamily;
+  final double textShadowSize;
 
   const PulseText({
     super.key,
     required this.text,
     required this.fontSize,
     required this.color,
+    required this.fontFamily,
+    required this.textShadowSize,
   });
 
   @override
@@ -43,7 +47,21 @@ class _PulseTextState extends State<PulseText>
       scale: _scale,
       child: Text(
         widget.text,
-        style: TextStyle(fontSize: widget.fontSize, color: widget.color),
+        style: TextStyle(
+          fontSize: widget.fontSize,
+          color: widget.color,
+          fontFamily: widget.fontFamily,
+          shadows:
+              widget.textShadowSize > 0.0
+                  ? [
+                    Shadow(
+                      blurRadius: widget.textShadowSize,
+                      color: widget.color.withAlpha((0.5 * 255).toInt()),
+                      offset: const Offset(5.0, 5.0),
+                    ),
+                  ]
+                  : [],
+        ),
         textAlign: TextAlign.center,
       ),
     );

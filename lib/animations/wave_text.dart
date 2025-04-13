@@ -5,12 +5,16 @@ class WaveText extends StatefulWidget {
   final String text;
   final double fontSize;
   final Color color;
+  final String fontFamily;
+  final double textShadowSize;
 
   const WaveText({
     super.key,
     required this.text,
     required this.fontSize,
     required this.color,
+    required this.fontFamily,
+    required this.textShadowSize,
   });
 
   @override
@@ -53,6 +57,19 @@ class _WaveTextState extends State<WaveText>
                 style: TextStyle(
                   fontSize: widget.fontSize,
                   color: widget.color,
+                  fontFamily: widget.fontFamily,
+                  shadows:
+                      widget.textShadowSize > 0.0
+                          ? [
+                            Shadow(
+                              blurRadius: widget.textShadowSize,
+                              color: widget.color.withAlpha(
+                                (0.5 * 255).toInt(),
+                              ),
+                              offset: const Offset(5.0, 5.0),
+                            ),
+                          ]
+                          : [],
                 ),
               ),
             );
