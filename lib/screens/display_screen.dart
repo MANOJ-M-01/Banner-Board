@@ -6,6 +6,7 @@ import 'package:banner_board/animations/pulse_text.dart';
 import 'package:banner_board/animations/wave_text.dart';
 import 'package:banner_board/animations/text_marquee_painter.dart';
 import 'package:banner_board/models/banner_run.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 class DisplayScreen extends StatefulWidget {
   final BannerRun bannerRun;
@@ -44,8 +45,10 @@ class _DisplayScreenState extends State<DisplayScreen>
 
     // Keep screen awake based on user preference
     if (widget.bannerRun.alwaysOn) {
+      WakelockPlus.enable();
       if (widget.bannerRun.sleepAfter > 0) {
         Timer(Duration(hours: widget.bannerRun.sleepAfter), () {
+          WakelockPlus.disable();
           SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
           Navigator.pop(context);
         });
