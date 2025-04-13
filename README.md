@@ -1,16 +1,40 @@
-# banner_board
+# Text Banner App (Flutter)
 
-A new Flutter project.
+A fullscreen text banner app with animation effects like Marquee, Blink, Wave, and Pulse. Built using pure Flutter (no external animation libraries).
 
-## Getting Started
+## 🎯 Features
 
-This project is a starting point for a Flutter application.
+- Fullscreen text display
+- Animations: Marquee, Blink, Pulse, Wave
+- Customization options:
+  - Text, Font Size, Text Color
+  - Background Color
+  - Orientation (Portrait/Landscape)
+  - Animation Speed, Direction
+  - Always-on Display + Auto Sleep
 
-A few resources to get you started if this is your first Flutter project:
+## 🧪 Preview & Run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✅ APK Export Steps
+
+1. **Enable Signing (optional)** in `android/app/build.gradle`
+2. Then run: `flutter build apk --release`
+3. Optimized APK: `flutter build apk --target-platform android-arm64 --analyze-size`
+
+## How to Change App Icon in Flutter
+
+https://www.youtube.com/watch?v=C9yTHKbwKOI
+https://pub.dev/packages/flutter_launcher_icons
+
+- dart run flutter_launcher_icons:generate
+- dart run flutter_launcher_icons
+
+## Reference
+
+- https://font.download/search?q=neon
+- https://medium.com/@panuj330/pushing-flutter-to-the-limit-the-ultimate-guide-to-reducing-flutter-app-size-4eb05c4351d1
