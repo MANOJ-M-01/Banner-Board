@@ -83,7 +83,7 @@ class FontControls extends StatelessWidget {
         ),
         Slider(
           value: fontSize,
-          min: 10,
+          min: 30,
           max: 300,
           divisions: 18,
           label: fontSize.round().toString(),
@@ -120,8 +120,9 @@ class FontControls extends StatelessWidget {
           onChanged: (val) => onFontAlignChanged(val!),
           items: const [
             DropdownMenuItem(value: 'left', child: Text('Left')),
-            DropdownMenuItem(value: 'center', child: Text('Center')),
             DropdownMenuItem(value: 'right', child: Text('Right')),
+            DropdownMenuItem(value: 'center', child: Text('Center')),
+            DropdownMenuItem(value: 'justify', child: Text('justify')),
           ],
         ),
       ],

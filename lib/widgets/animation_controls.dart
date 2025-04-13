@@ -51,8 +51,8 @@ class AnimationControls extends StatelessWidget {
         Slider(
           value: speed,
           min: 0.1,
-          max: 5.0,
-          divisions: 49,
+          max: 4.0,
+          divisions: 10,
           onChanged: onSpeedChanged,
         ),
       ],
