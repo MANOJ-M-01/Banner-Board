@@ -27,6 +27,10 @@ flutter pub get
 flutter run
 ```
 
+## Native Splash Screen
+
+`dart run flutter_native_splash:create --path=flutter_native_splash.yaml`
+
 ## ✅ APK Export Steps
 
 1. **Enable Signing (optional)** in `android/app/build.gradle`
