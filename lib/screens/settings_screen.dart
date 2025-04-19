@@ -28,10 +28,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   String direction = 'left';
   String animationType = 'marquee';
-  double speed = 0.5;
+  double speed = 0.3;
 
   String screenOrientation = 'landscape';
-  String selectedFont = 'RubikMonoOne';
+  String selectedFont = 'TitanOne';
   String selectedFontWeight = 'Normal';
   final textController = TextEditingController();
 
