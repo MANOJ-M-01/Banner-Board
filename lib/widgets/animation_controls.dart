@@ -52,7 +52,7 @@ class AnimationControls extends StatelessWidget {
           value: speed,
           min: 0.1,
           max: 4.0,
-          divisions: 10,
+          divisions: 39,
           onChanged: onSpeedChanged,
         ),
       ],
