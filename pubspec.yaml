@@ -35,74 +35,99 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   fonts:
-    - family: Adhynatha
+    - family: AlfaSlabOne
       fonts:
-        - asset: assets/fonts/Adhynatha.otf
+        - asset: assets/fonts/AlfaSlabOne-Regular.ttf
           # style: italic
           # weight: 700
-    - family: BANDEM-REGULER
+    - family: Anton
       fonts:
-        - asset: assets/fonts/BANDEM-REGULER.ttf
-    - family: BANDEM-SHADOW
+        - asset: assets/fonts/Anton-Regular.ttf
+
+    - family: BebasNeue
       fonts:
-        - asset: assets/fonts/BANDEM-SHADOW.ttf
-    - family: Bandero
+        - asset: assets/fonts/BebasNeue-Regular.ttf
+
+    - family: BigShouldersInline
       fonts:
-        - asset: assets/fonts/Bandero-p7qeR.ttf
-    - family: Bangers-Regular
+        - asset: assets/fonts/BigShouldersInline-VariableFont_opsz,wght.ttf
+
+    - family: Boldonse
       fonts:
-        - asset: assets/fonts/Bangers-Regular.ttf
-    - family: Chewy-Regular
+        - asset: assets/fonts/Boldonse-Regular.ttf
+
+    - family: BungeeSpice
       fonts:
-        - asset: assets/fonts/Chewy-Regular.ttf
-    - family: Finlikless-Regular
+        - asset: assets/fonts/BungeeSpice-Regular.ttf
+
+    - family: Exo2Black
       fonts:
-        - asset: assets/fonts/Finlikless-Regular.ttf
-    - family: Genesize Grotesk
+        - asset: assets/fonts/Exo2-Black.ttf
+
+    - family: Exo2Bold
       fonts:
-        - asset: assets/fonts/GenesizeGroteskDemo.otf
-    - family: Neon Feel
+        - asset: assets/fonts/Exo2-Bold.ttf
+
+    - family: LilitaOne
       fonts:
-        - asset: assets/fonts/Neon Feel.ttf
-    - family: Neon
+        - asset: assets/fonts/LilitaOne-Regular.ttf
+
+    - family: Neonderthaw
       fonts:
-        - asset: assets/fonts/Neon.ttf
-    - family: neon2
+        - asset: assets/fonts/Neonderthaw-Regular.ttf
+
+    - family: PermanentMarker
       fonts:
-        - asset: assets/fonts/neon2.ttf
-    - family: NEONLEDLight
+        - asset: assets/fonts/PermanentMarker-Regular.ttf
+
+    - family: PixelifySans
       fonts:
-        - asset: assets/fonts/NEONLEDLight.ttf
-    - family: NeonSans-L3GXE
+        - asset: assets/fonts/PixelifySans-VariableFont_wght.ttf
+
+    - family: PoetsenOne
       fonts:
-        - asset: assets/fonts/NeonSans-L3GXE.ttf
-    - family: OpenSans
+        - asset: assets/fonts/PoetsenOne-Regular.ttf
+
+    - family: PressStart2P
       fonts:
-        - asset: assets/fonts/open-sans.regular.ttf
-    - family: Quadran-Regular
+        - asset: assets/fonts/PressStart2P-Regular.ttf
+
+    - family: RowdiesBold
       fonts:
-        - asset: assets/fonts/Quadran-Regular.otf
-    - family: Raintion-Black
+        - asset: assets/fonts/Rowdies-Bold.ttf
+
+    - family: RowdiesLight
       fonts:
-        - asset: assets/fonts/Raintion-Black.ttf
-    - family: Redhawk
+        - asset: assets/fonts/Rowdies-Light.ttf
+
+    - family: RowdiesRegular
       fonts:
-        - asset: assets/fonts/Redhawk.otf
-    - family: Roboto-Bold
+        - asset: assets/fonts/Rowdies-Regular.ttf
+
+    - family: RubikMonoOne
       fonts:
-        - asset: assets/fonts/Roboto-Bold.ttf
-    - family: Roboto-Medium
+        - asset: assets/fonts/RubikMonoOne-Regular.ttf
+
+    - family: SilkscreenBold
       fonts:
-        - asset: assets/fonts/Roboto-Medium.ttf
-    - family: Rogbold-3llGM
+        - asset: assets/fonts/Silkscreen-Bold.ttf
+
+    - family: SilkscreenRegular
       fonts:
-        - asset: assets/fonts/Rogbold-3llGM.otf
-    - family: Tarragon
+        - asset: assets/fonts/Silkscreen-Regular.ttf
+
+    - family: SpecialGothicExpandedOne
       fonts:
-        - asset: assets/fonts/Tarragon.otf
-    - family: VANTEQU
+        - asset: assets/fonts/SpecialGothicExpandedOne-Regular.ttf
+
+    - family: Teko
       fonts:
-        - asset: assets/fonts/VANTEQU.otf
-    - family: Vivaldi Regular
+        - asset: assets/fonts/Teko-VariableFont_wght.ttf
+
+    - family: TiltNeon
       fonts:
-        - asset: assets/fonts/VivaldiRegular-X3BXd.ttf
+        - asset: assets/fonts/TiltNeon-Regular-VariableFont_XROT,YROT.ttf
+
+    - family: TitanOne
+      fonts:
+        - asset: assets/fonts/TitanOne-Regular.ttf
