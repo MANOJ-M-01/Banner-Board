@@ -1,7 +1,7 @@
 name: banner_board
 description: "A fullscreen text banner app with marquee and animation effects."
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
-version: 1.2.3+1
+version: 1.2.4+1
 environment:
   sdk: ^3.7.2
 dependencies:
