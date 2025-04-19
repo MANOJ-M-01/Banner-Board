@@ -3,9 +3,11 @@
 A fullscreen text banner app with animation effects like Marquee, Blink, Wave, and Pulse. Built using pure Flutter (no external animation libraries).
 
 ## How it looks
-<img height="300" src="./out/Screen 1.jpg" />
-<img height="300" src="./out/Screen 2.jpg" />
-<img height="300" src="./out/Screen 3.jpg" />
+<img height="300" src="./out/Screen 1.jpg" /> <img height="300" src="./out/Screen 2.jpg" /> <img height="300" src="./out/Screen 3.jpg" />
+
+## Download APK
+
+- [Banner Board APK Release Links ](</releases/tag/1.2.3>)
 
 ## 🎯 Features
 
