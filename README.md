@@ -7,7 +7,7 @@ A fullscreen text banner app with animation effects like Marquee, Blink, Wave, a
 
 ## Download APK
 
-[Banner Board APK Release Links](https://github.com/MANOJ-M-01/Banner-Board/releases/tag/1.2.3)
+[Banner Board APK Release Links](https://github.com/MANOJ-M-01/Banner-Board/releases/tag/1.2.4)
 
 ## 🎯 Features
 
