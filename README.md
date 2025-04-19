@@ -26,15 +26,6 @@ flutter run
 2. Then run: `flutter build apk --release`
 3. Optimized APK: `flutter build apk --target-platform android-arm64 --analyze-size`
 
-## How to Change App Icon in Flutter
-
-https://www.youtube.com/watch?v=C9yTHKbwKOI
-https://pub.dev/packages/flutter_launcher_icons
-
-- dart run flutter_launcher_icons:generate
-- dart run flutter_launcher_icons
-
 ## Reference
 
-- https://font.download/search?q=neon
-- https://medium.com/@panuj330/pushing-flutter-to-the-limit-the-ultimate-guide-to-reducing-flutter-app-size-4eb05c4351d1
+- https://fonts.google.com/
