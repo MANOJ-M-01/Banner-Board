@@ -31,7 +31,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   double speed = 0.5;
 
   String screenOrientation = 'landscape';
-  String selectedFont = 'Tarragon';
+  String selectedFont = 'RubikMonoOne';
   String selectedFontWeight = 'Normal';
   final textController = TextEditingController();
 
